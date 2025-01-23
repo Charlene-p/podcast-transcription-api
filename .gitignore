@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+static/temp/*
+!static/temp/.gitkeep
+static/model/*
+!static/model/.gitkeep
+static/podcast_transcript/*
+!static/podcast_transcript/.gitkeep
+
+# Audio files
+*.mp3
+*.wav
+
+# Logs
+*.log
+
+# Docker
+.docker/
+
+# System
+.DS_Store
+Thumbs.db
