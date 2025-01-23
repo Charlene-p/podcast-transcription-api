@@ -1,13 +1,13 @@
-version: '3.8'
-
 services:
-  api:
-    build: .
-    container_name: podcast-api
+  podcast-gen:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: podcast-gen
     restart: unless-stopped
     ports:
-      - "8000:8000"
-    volumes:
-      - ./static:/app/static
+      - ${PORT}:${PORT}
     env_file:
       - .env
+    volumes:
+      - ./static:/app/static
